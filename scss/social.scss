@@ -1,0 +1,23 @@
+body {
+  .social_row {
+    @include grid-row();
+    background-color: rgba(68, 0, 0, .1);
+    // border-bottom: 2px solid white;
+    border-top: 5px solid white;
+    .links {
+      @include grid-column(12);
+      background-color: rgba(9, 0, 0, .6);
+
+      a {
+        @include grid-column(12);
+        padding: 20px;
+        text-align: center;
+        font-size: 22px;
+        color: rgba(255, 255, 250, .9);
+        @include breakpoint(850px){
+          @include grid-column(4);
+        }
+      }
+    }
+  }
+}

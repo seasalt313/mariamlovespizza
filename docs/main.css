@@ -1435,6 +1435,7 @@ body .info_row {
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
+    text-align: center;
     color: rgba(255, 255, 250, 0.9); }
     @media print, screen and (min-width: 40em) {
       body .info_row .bio_column {
@@ -1457,10 +1458,64 @@ body .info_row {
         body .info_row .bio_column:last-child:not(:first-child) {
           float: right; }
         body .info_row .bio_column img {
-          padding-top: 70px; } }
+          padding-top: 70px;
+          margin: auto; } }
+
+body .social_row {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(68, 0, 0, 0.1);
+  border-top: 5px solid white; }
+  body .social_row::before, body .social_row::after {
+    display: table;
+    content: ' '; }
+  body .social_row::after {
+    clear: both; }
+  body .social_row .links {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    background-color: rgba(9, 0, 0, 0.6); }
+    @media print, screen and (min-width: 40em) {
+      body .social_row .links {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    body .social_row .links:last-child:not(:first-child) {
+      float: right; }
+    body .social_row .links a {
+      width: 100%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      color: rgba(255, 255, 250, 0.9); }
+      @media print, screen and (min-width: 40em) {
+        body .social_row .links a {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      body .social_row .links a:last-child:not(:first-child) {
+        float: right; }
+      @media screen and (min-width: 53.125em) {
+        body .social_row .links a {
+          width: 33.33333%;
+          float: left;
+          padding-right: 0.625rem;
+          padding-left: 0.625rem; } }
+  @media screen and (min-width: 53.125em) and (min-width: 40em) {
+    body .social_row .links a {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+      @media screen and (min-width: 53.125em) {
+          body .social_row .links a:last-child:not(:first-child) {
+            float: right; } }
 
 body {
   padding: 20px;
   margin: 20px;
   background-image: url("images/pastel.jpg");
+  background-size: cover;
   font-family: 'Dosis', sans-serif; }

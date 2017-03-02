@@ -8,11 +8,13 @@
 @import "nav";
 @import "summary";
 @import "info";
+@import "social";
 
 body {
   padding: 20px;
   margin: 20px;
   background-image: url('images/pastel.jpg');
+  background-size: cover;
   font-family: 'Dosis', sans-serif;
 
 
