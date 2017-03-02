@@ -8,10 +8,12 @@ body {
     }
     .education_column {
       @include grid-column(12);
+      text-align: center;
       color: rgba(255, 255, 250, .9);
       @include breakpoint(850px){
         @include grid-column(4);
         border-right: 1px solid white;
+        text-align: left;
       };
       li {
         list-style: none;
@@ -23,6 +25,7 @@ body {
       @include grid-column(12);
       text-align: center;
       color: rgba(255, 255, 250, .9);
+      font-size: 19px;
       @include breakpoint(850px){
         @include grid-column(8);
         text-align: center;

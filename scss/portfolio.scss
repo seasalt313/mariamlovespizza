@@ -1,17 +1,25 @@
 body {
   .portfolio_row {
     @include grid-row();
-    background-color: rgba(255, 255, 250, .9);
+    background-color: rgba(93,111,127, .8);
+    border-radius: 6px;
+    margin-top: 20px;
+    color: white;
     background-size: cover;
     padding: 100px;
     text-align: center;
     ul {
       @include grid-column(12);
       li {
-        @include grid-column(6);
-        list-style: none;
-        font-size: 25px;
+        @include grid-column(12);
+        padding-top: 20px;
+          list-style: none;
+          font-size: 25px;
+          @include breakpoint(850px){
+            @include grid-column(6);
+          }
+        }
       }
     }
-  }
+
 }
