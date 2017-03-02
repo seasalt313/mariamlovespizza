@@ -27,7 +27,7 @@ body {
   .intro {
     @include grid-row();
     background-color: rgba(0,0,0,.6);
-    color: white;
+    color: beige;
     text-align: center;
     h1 {
       @include grid-column(12);
