@@ -9,8 +9,10 @@ body {
   padding: 20px;
   margin: 20px;
   background-image: url('docs/images/pastel.jpg');
+  background-color: maroon;
 
   .intro {
-    background-color: black;
+    background-color: rgba(0,0,0,.6);
+    color: white;
   }
 }
