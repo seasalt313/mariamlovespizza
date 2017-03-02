@@ -6,8 +6,11 @@
 @include foundation-grid;
 
 body {
-  background-color: beige;
-  border: 2px solid maroon;
   padding: 20px;
   margin: 20px;
+  background-image: url('docs/images/pastel.jpg');
+
+  .intro {
+    background-color: black;
+  }
 }
