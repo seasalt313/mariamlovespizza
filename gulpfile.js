@@ -12,24 +12,24 @@ gulp.task('default', ['html',
 
 //Step 3: create subtasks
 gulp.task('html', function (){ //when someone types 'gulp html' run this function
-  // Copy index.html into the public/directory.
+  // Copy index.html into the docs/directory.
   return gulp.src('index.html')
-  .pipe(gulp.dest('public/'));
+  .pipe(gulp.dest('docs/'));
 })
 
 gulp.task('css', function(){
   //Convert main.scss to main.css
-  //Copy to public/
+  //Copy to docs/
   return gulp.src('scss/main.scss')
     .pipe(sass()) //requires gulp-sass
-    .pipe(gulp.dest('public/'));
+    .pipe(gulp.dest('docs/'));
 })
 
 gulp.task('js', function(){
-  //Copy js file into public/
+  //Copy js file into docs/
   return gulp.src('js/app.js')
   .pipe(browser.browserify())
-  .pipe(gulp.dest('public/'));
+  .pipe(gulp.dest('docs/'));
 })
 
 gulp.task('watch', ['default'], function(){
