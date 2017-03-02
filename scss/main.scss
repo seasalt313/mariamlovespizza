@@ -12,9 +12,27 @@ body {
   background-color: maroon;
   font-family: 'Dosis', sans-serif;
 
+  nav {
+    @include grid-row();
+    ul {
+      @include grid-column(12);
+      list-style: none;
+      li {
+        @include grid-column(4);
+        list-style: none;
+      }
+    }
+  }
+
 
   .intro {
+    @include grid-row();
     background-color: rgba(0,0,0,.6);
     color: white;
+    text-align: center;
+    h1 {
+      @include grid-column(12);
+
+    }
   }
 }
