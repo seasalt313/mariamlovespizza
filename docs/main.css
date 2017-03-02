@@ -1260,7 +1260,9 @@ body {
   body nav {
     max-width: 75rem;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    text-align: center;
+    color: white; }
     body nav::before, body nav::after {
       display: table;
       content: ' '; }
@@ -1271,7 +1273,9 @@ body {
       float: left;
       padding-right: 0.625rem;
       padding-left: 0.625rem;
-      list-style: none; }
+      list-style: none;
+      background-color: rgba(68, 0, 0, 0.1);
+      border-radius: 3px; }
       @media print, screen and (min-width: 40em) {
         body nav ul {
           padding-right: 0.9375rem;
@@ -1295,6 +1299,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
     color: white;
     text-align: center; }
     body .intro::before, body .intro::after {
@@ -1312,4 +1317,73 @@ body {
           padding-right: 0.9375rem;
           padding-left: 0.9375rem; } }
       body .intro h1:last-child:not(:first-child) {
+        float: right; }
+  body .things {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center; }
+    body .things::before, body .things::after {
+      display: table;
+      content: ' '; }
+    body .things::after {
+      clear: both; }
+    body .things h1 {
+      width: 100%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem; }
+      @media print, screen and (min-width: 40em) {
+        body .things h1 {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      body .things h1:last-child:not(:first-child) {
+        float: right; }
+    body .things ul {
+      max-width: 75rem;
+      margin-right: auto;
+      margin-left: auto; }
+      body .things ul::before, body .things ul::after {
+        display: table;
+        content: ' '; }
+      body .things ul::after {
+        clear: both; }
+      body .things ul li {
+        width: 25%;
+        float: left;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        list-style: none; }
+        @media print, screen and (min-width: 40em) {
+          body .things ul li {
+            padding-right: 0.9375rem;
+            padding-left: 0.9375rem; } }
+        body .things ul li:last-child:not(:first-child) {
+          float: right; }
+  body .summary_row {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    text-align: center; }
+    body .summary_row::before, body .summary_row::after {
+      display: table;
+      content: ' '; }
+    body .summary_row::after {
+      clear: both; }
+    body .summary_row .summary {
+      width: 100%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      margin: auto;
+      color: black;
+      font-size: 19px; }
+      @media print, screen and (min-width: 40em) {
+        body .summary_row .summary {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      body .summary_row .summary:last-child:not(:first-child) {
         float: right; }
