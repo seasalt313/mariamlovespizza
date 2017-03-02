@@ -1430,6 +1430,34 @@ body .info_row {
     body .info_row .education_column li {
       list-style: none;
       border-bottom: 1px dotted rgba(0, 0, 0, 0.4); }
+  body .info_row .bio_column {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    color: rgba(255, 255, 250, 0.9); }
+    @media print, screen and (min-width: 40em) {
+      body .info_row .bio_column {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    body .info_row .bio_column:last-child:not(:first-child) {
+      float: right; }
+    @media screen and (min-width: 53.125em) {
+      body .info_row .bio_column {
+        width: 66.66667%;
+        float: left;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        text-align: center; } }
+  @media screen and (min-width: 53.125em) and (min-width: 40em) {
+    body .info_row .bio_column {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+    @media screen and (min-width: 53.125em) {
+        body .info_row .bio_column:last-child:not(:first-child) {
+          float: right; }
+        body .info_row .bio_column img {
+          padding-top: 70px; } }
 
 body {
   padding: 20px;

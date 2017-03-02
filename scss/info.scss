@@ -2,10 +2,10 @@ body {
   .info_row{
     @include grid-row();
     background-color: rgba(62, 0, 0, .4);
+
     h1 {
       text-align: center;
     }
-
     .education_column {
       @include grid-column(12);
       color: rgba(255, 255, 250, .9);
@@ -18,5 +18,22 @@ body {
         border-bottom: 1px dotted rgba(0, 0, 0, .4);
       }
     }
+
+    .bio_column {
+      @include grid-column(12);
+      color: rgba(255, 255, 250, .9);
+      @include breakpoint(850px){
+        @include grid-column(8);
+        text-align: center;
+        img {
+          padding-top: 70px;
+        }
+      };
+
+    }
+
+
+
+
   }
 }
