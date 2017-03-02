@@ -10,8 +10,17 @@ body {
       border-radius: 3px;
 
       li {
-        @include grid-column(4);
+        @include grid-column(12);
+        padding: 5px;
         list-style: none;
+        @include breakpoint(850px){
+          @include grid-column(4);
+        };
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 19px;
+        }
       }
     }
   }
