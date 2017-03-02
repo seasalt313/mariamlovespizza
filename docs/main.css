@@ -1326,7 +1326,8 @@ body .intro {
     width: 100%;
     float: left;
     padding-right: 0.625rem;
-    padding-left: 0.625rem; }
+    padding-left: 0.625rem;
+    font-family: 'Raleway', sans-serif; }
     @media print, screen and (min-width: 40em) {
       body .intro h1 {
         padding-right: 0.9375rem;
@@ -1418,7 +1419,8 @@ body .info_row {
   body .info_row::after {
     clear: both; }
   body .info_row h1 {
-    text-align: center; }
+    text-align: center;
+    font-family: 'Raleway', sans-serif; }
   body .info_row .education_column {
     width: 100%;
     float: left;
