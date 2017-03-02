@@ -1252,138 +1252,174 @@ button {
       .column-block > :last-child {
         margin-bottom: 0; } }
 
+body nav {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: white; }
+  body nav::before, body nav::after {
+    display: table;
+    content: ' '; }
+  body nav::after {
+    clear: both; }
+  body nav ul {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    list-style: none;
+    background-color: rgba(68, 0, 0, 0.1);
+    border-radius: 3px; }
+    @media print, screen and (min-width: 40em) {
+      body nav ul {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    body nav ul:last-child:not(:first-child) {
+      float: right; }
+    body nav ul li {
+      width: 33.33333%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      list-style: none; }
+      @media print, screen and (min-width: 40em) {
+        body nav ul li {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      body nav ul li:last-child:not(:first-child) {
+        float: right; }
+
+body .intro {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: white;
+  text-align: center; }
+  body .intro::before, body .intro::after {
+    display: table;
+    content: ' '; }
+  body .intro::after {
+    clear: both; }
+  body .intro h1 {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      body .intro h1 {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    body .intro h1:last-child:not(:first-child) {
+      float: right; }
+
+body .things {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center; }
+  body .things::before, body .things::after {
+    display: table;
+    content: ' '; }
+  body .things::after {
+    clear: both; }
+  body .things h1 {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      body .things h1 {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    body .things h1:last-child:not(:first-child) {
+      float: right; }
+  body .things ul {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto; }
+    body .things ul::before, body .things ul::after {
+      display: table;
+      content: ' '; }
+    body .things ul::after {
+      clear: both; }
+    body .things ul li {
+      width: 25%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      list-style: none; }
+      @media print, screen and (min-width: 40em) {
+        body .things ul li {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      body .things ul li:last-child:not(:first-child) {
+        float: right; }
+
+body .summary_row {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center; }
+  body .summary_row::before, body .summary_row::after {
+    display: table;
+    content: ' '; }
+  body .summary_row::after {
+    clear: both; }
+  body .summary_row .summary {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    margin: auto;
+    color: black;
+    font-size: 19px; }
+    @media print, screen and (min-width: 40em) {
+      body .summary_row .summary {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    body .summary_row .summary:last-child:not(:first-child) {
+      float: right; }
+
+body .info_row {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(62, 0, 0, 0.4); }
+  body .info_row::before, body .info_row::after {
+    display: table;
+    content: ' '; }
+  body .info_row::after {
+    clear: both; }
+  body .info_row h1 {
+    text-align: center; }
+  body .info_row .education_column {
+    width: 33.33333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    border-right: 1px solid white;
+    color: rgba(255, 255, 250, 0.9); }
+    @media print, screen and (min-width: 40em) {
+      body .info_row .education_column {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    body .info_row .education_column:last-child:not(:first-child) {
+      float: right; }
+    body .info_row .education_column li {
+      list-style: none;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.4); }
+
 body {
   padding: 20px;
   margin: 20px;
   background-image: url("images/pastel.jpg");
   font-family: 'Dosis', sans-serif; }
-  body nav {
-    max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    color: white; }
-    body nav::before, body nav::after {
-      display: table;
-      content: ' '; }
-    body nav::after {
-      clear: both; }
-    body nav ul {
-      width: 100%;
-      float: left;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem;
-      list-style: none;
-      background-color: rgba(68, 0, 0, 0.1);
-      border-radius: 3px; }
-      @media print, screen and (min-width: 40em) {
-        body nav ul {
-          padding-right: 0.9375rem;
-          padding-left: 0.9375rem; } }
-      body nav ul:last-child:not(:first-child) {
-        float: right; }
-      body nav ul li {
-        width: 33.33333%;
-        float: left;
-        padding-right: 0.625rem;
-        padding-left: 0.625rem;
-        list-style: none; }
-        @media print, screen and (min-width: 40em) {
-          body nav ul li {
-            padding-right: 0.9375rem;
-            padding-left: 0.9375rem; } }
-        body nav ul li:last-child:not(:first-child) {
-          float: right; }
-  body .intro {
-    max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 3px;
-    color: white;
-    text-align: center; }
-    body .intro::before, body .intro::after {
-      display: table;
-      content: ' '; }
-    body .intro::after {
-      clear: both; }
-    body .intro h1 {
-      width: 100%;
-      float: left;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; }
-      @media print, screen and (min-width: 40em) {
-        body .intro h1 {
-          padding-right: 0.9375rem;
-          padding-left: 0.9375rem; } }
-      body .intro h1:last-child:not(:first-child) {
-        float: right; }
-  body .things {
-    max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center; }
-    body .things::before, body .things::after {
-      display: table;
-      content: ' '; }
-    body .things::after {
-      clear: both; }
-    body .things h1 {
-      width: 100%;
-      float: left;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem; }
-      @media print, screen and (min-width: 40em) {
-        body .things h1 {
-          padding-right: 0.9375rem;
-          padding-left: 0.9375rem; } }
-      body .things h1:last-child:not(:first-child) {
-        float: right; }
-    body .things ul {
-      max-width: 75rem;
-      margin-right: auto;
-      margin-left: auto; }
-      body .things ul::before, body .things ul::after {
-        display: table;
-        content: ' '; }
-      body .things ul::after {
-        clear: both; }
-      body .things ul li {
-        width: 25%;
-        float: left;
-        padding-right: 0.625rem;
-        padding-left: 0.625rem;
-        list-style: none; }
-        @media print, screen and (min-width: 40em) {
-          body .things ul li {
-            padding-right: 0.9375rem;
-            padding-left: 0.9375rem; } }
-        body .things ul li:last-child:not(:first-child) {
-          float: right; }
-  body .summary_row {
-    max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: white;
-    text-align: center; }
-    body .summary_row::before, body .summary_row::after {
-      display: table;
-      content: ' '; }
-    body .summary_row::after {
-      clear: both; }
-    body .summary_row .summary {
-      width: 100%;
-      float: left;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem;
-      margin: auto;
-      color: black;
-      font-size: 19px; }
-      @media print, screen and (min-width: 40em) {
-        body .summary_row .summary {
-          padding-right: 0.9375rem;
-          padding-left: 0.9375rem; } }
-      body .summary_row .summary:last-child:not(:first-child) {
-        float: right; }

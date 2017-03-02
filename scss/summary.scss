@@ -1,0 +1,44 @@
+body {
+  .intro {
+    @include grid-row();
+    background-color: rgba(0,0,0,.6);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    color: white;
+    text-align: center;
+    h1 {
+      @include grid-column(12);
+    }
+  }
+
+  .things {
+    @include grid-row();
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    text-align: center;
+    h1 {
+      @include grid-column(12);
+    }
+    ul {
+      @include grid-row();
+      li {
+        @include grid-column(3);
+        list-style: none;
+      }
+    }
+  }
+
+  .summary_row {
+    @include grid-row();
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    .summary {
+      @include grid-column(12);
+      margin: auto;
+      color: black;
+      font-size: 19px;
+    }
+  }
+}

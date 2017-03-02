@@ -1,0 +1,19 @@
+body {
+  .info_row{
+    @include grid-row();
+    background-color: rgba(62, 0, 0, .4);
+    h1 {
+      text-align: center;
+    }
+
+    .education_column {
+      @include grid-column(4);
+      border-right: 1px solid white;
+      color: rgba(255, 255, 250, .9);
+      li {
+        list-style: none;
+        border-bottom: 1px dotted rgba(0, 0, 0, .4);
+      }
+    }
+  }
+}

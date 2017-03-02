@@ -1,0 +1,18 @@
+body {
+  nav {
+    @include grid-row();
+    text-align: center;
+    color:white;
+    ul {
+      @include grid-column(12);
+      list-style: none;
+      background-color: rgba(68, 0, 0, .1);
+      border-radius: 3px;
+
+      li {
+        @include grid-column(4);
+        list-style: none;
+      }
+    }
+  }
+}

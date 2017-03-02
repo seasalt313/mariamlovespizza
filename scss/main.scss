@@ -5,70 +5,15 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
+@import "nav";
+@import "summary";
+@import "info";
+
 body {
   padding: 20px;
   margin: 20px;
   background-image: url('images/pastel.jpg');
   font-family: 'Dosis', sans-serif;
-
-  nav {
-    @include grid-row();
-    text-align: center;
-    color:white;
-    ul {
-      @include grid-column(12);
-      list-style: none;
-      background-color: rgba(68, 0, 0, .1);
-      border-radius: 3px;
-
-      li {
-        @include grid-column(4);
-        list-style: none;
-      }
-    }
-  }
-
-
-  .intro {
-    @include grid-row();
-    background-color: rgba(0,0,0,.6);
-    border-radius: 3px;
-    color: white;
-    text-align: center;
-    h1 {
-      @include grid-column(12);
-    }
-  }
-
-  .things {
-    @include grid-row();
-    background-color: rgba(0,0,0,.8);
-    color: white;
-    text-align: center;
-    h1 {
-      @include grid-column(12);
-    }
-    ul {
-      @include grid-row();
-      li {
-        @include grid-column(3);
-        list-style: none;
-      }
-    }
-  }
-
-  .summary_row {
-    @include grid-row();
-    background-color: white;
-    text-align: center;
-    .summary {
-      @include grid-column(12);
-      margin: auto;
-      color: black;
-      font-size: 19px;
-    }
-  }
-
 
 
 
