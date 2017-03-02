@@ -7,9 +7,12 @@ body {
     }
 
     .education_column {
-      @include grid-column(4);
-      border-right: 1px solid white;
+      @include grid-column(12);
       color: rgba(255, 255, 250, .9);
+      @include breakpoint(850px){
+        @include grid-column(4);
+        border-right: 1px solid white;
+      };
       li {
         list-style: none;
         border-bottom: 1px dotted rgba(0, 0, 0, .4);
