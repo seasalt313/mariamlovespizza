@@ -1531,6 +1531,44 @@ body .social_row {
           body .social_row .links a:last-child:not(:first-child) {
             float: right; } }
 
+body .portfolio_row {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(255, 255, 250, 0.9);
+  background-size: cover;
+  padding: 100px;
+  text-align: center; }
+  body .portfolio_row::before, body .portfolio_row::after {
+    display: table;
+    content: ' '; }
+  body .portfolio_row::after {
+    clear: both; }
+  body .portfolio_row ul {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      body .portfolio_row ul {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    body .portfolio_row ul:last-child:not(:first-child) {
+      float: right; }
+    body .portfolio_row ul li {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      list-style: none;
+      font-size: 25px; }
+      @media print, screen and (min-width: 40em) {
+        body .portfolio_row ul li {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      body .portfolio_row ul li:last-child:not(:first-child) {
+        float: right; }
+
 body {
   padding: 20px;
   margin: 20px;
