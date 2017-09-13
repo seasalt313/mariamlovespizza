@@ -1586,7 +1586,8 @@ body .portfolio_row {
           padding-left: 0.625rem;
           padding-top: 20px;
           list-style: none;
-          font-size: 25px; } }
+          font-size: 25px;
+          display: block; } }
   @media screen and (min-width: 53.125em) and (min-width: 40em) {
     body .portfolio_row ul li {
       padding-right: 0.9375rem;
