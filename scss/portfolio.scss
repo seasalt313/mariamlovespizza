@@ -6,7 +6,6 @@ body {
     margin-top: 20px;
     color: white;
     background-size: cover;
-    padding: 100px;
     text-align: center;
     ul {
       @include grid-column(12);
