@@ -23,8 +23,11 @@ body {
     ul {
       @include grid-row();
       li {
-        @include grid-column(3);
-        list-style: none;
+        @include grid-column(6);
+        @include breakpoint(850px){
+          @include grid-column(3);
+          list-style: none;
+        };
       }
     }
   }
