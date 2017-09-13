@@ -1282,7 +1282,6 @@ body nav {
       float: left;
       padding-right: 0.625rem;
       padding-left: 0.625rem;
-      padding: 5px;
       list-style: none; }
       @media print, screen and (min-width: 40em) {
         body nav ul li {
@@ -1295,7 +1294,8 @@ body nav {
           width: 33.33333%;
           float: left;
           padding-right: 0.625rem;
-          padding-left: 0.625rem; } }
+          padding-left: 0.625rem;
+          padding: 5px; } }
   @media screen and (min-width: 53.125em) and (min-width: 40em) {
     body nav ul li {
       padding-right: 0.9375rem;
@@ -1327,7 +1327,7 @@ body .intro {
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Lato', sans-serif; }
     @media print, screen and (min-width: 40em) {
       body .intro h1 {
         padding-right: 0.9375rem;
@@ -1420,13 +1420,14 @@ body .info_row {
     clear: both; }
   body .info_row h1 {
     text-align: center;
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Lato', sans-serif; }
   body .info_row .education_column {
     width: 100%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
     text-align: center;
+    padding-left: 0 !important;
     color: rgba(255, 255, 250, 0.9); }
     @media print, screen and (min-width: 40em) {
       body .info_row .education_column {
@@ -1547,7 +1548,6 @@ body .portfolio_row {
   margin-top: 20px;
   color: white;
   background-size: cover;
-  padding: 100px;
   text-align: center; }
   body .portfolio_row::before, body .portfolio_row::after {
     display: table;
@@ -1558,7 +1558,8 @@ body .portfolio_row {
     width: 100%;
     float: left;
     padding-right: 0.625rem;
-    padding-left: 0.625rem; }
+    padding-left: 0.625rem;
+    padding: 0px !important; }
     @media print, screen and (min-width: 40em) {
       body .portfolio_row ul {
         padding-right: 0.9375rem;
@@ -1570,9 +1571,7 @@ body .portfolio_row {
       float: left;
       padding-right: 0.625rem;
       padding-left: 0.625rem;
-      padding-top: 20px;
-      list-style: none;
-      font-size: 25px; }
+      display: none; }
       @media print, screen and (min-width: 40em) {
         body .portfolio_row ul li {
           padding-right: 0.9375rem;
@@ -1584,7 +1583,10 @@ body .portfolio_row {
           width: 50%;
           float: left;
           padding-right: 0.625rem;
-          padding-left: 0.625rem; } }
+          padding-left: 0.625rem;
+          padding-top: 20px;
+          list-style: none;
+          font-size: 25px; } }
   @media screen and (min-width: 53.125em) and (min-width: 40em) {
     body .portfolio_row ul li {
       padding-right: 0.9375rem;
@@ -1598,4 +1600,4 @@ body {
   margin: 20px;
   background-image: url("images/pastel.jpg");
   background-size: cover;
-  font-family: 'Dosis', sans-serif; }
+  font-family: 'Lato', sans-serif; }
