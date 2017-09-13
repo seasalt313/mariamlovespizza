@@ -9,6 +9,7 @@ body {
     text-align: center;
     ul {
       @include grid-column(12);
+      padding: 0px !important;
       li {
         @include grid-column(12);
         display: none;
