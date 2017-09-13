@@ -11,6 +11,7 @@ body {
     .education_column {
       @include grid-column(12);
       text-align: center;
+      padding-left: 0 !important;
       color: rgba(255, 255, 250, .9);
       @include breakpoint(850px){
         @include grid-column(4);

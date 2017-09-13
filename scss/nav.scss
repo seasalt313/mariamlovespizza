@@ -11,10 +11,10 @@ body {
 
       li {
         @include grid-column(12);
-        padding: 5px;
         list-style: none;
         @include breakpoint(850px){
           @include grid-column(4);
+          padding: 5px;
         };
         a {
           color: white;

@@ -12,11 +12,12 @@ body {
       @include grid-column(12);
       li {
         @include grid-column(12);
-        padding-top: 20px;
-          list-style: none;
-          font-size: 25px;
+          width: 80%;
           @include breakpoint(850px){
             @include grid-column(6);
+            padding-top: 20px;
+            list-style: none;
+            font-size: 25px;
           }
         }
       }
