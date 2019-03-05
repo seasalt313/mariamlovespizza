@@ -1,27 +1,27 @@
 body {
-  nav {
-    @include grid-row();
-    text-align: center;
-    color:white;
-    ul {
-      @include grid-column(12);
-      list-style: none;
-      background-color: rgba(68, 0, 0, .1);
-      border-radius: 3px;
-
-      li {
-        @include grid-column(12);
-        list-style: none;
-        @include breakpoint(850px){
-          @include grid-column(4);
-          padding: 5px;
-        };
-        a {
-          color: white;
-          text-decoration: none;
-          font-size: 19px;
+    nav {
+        @include grid-row();
+        text-align: center;
+        color: white;
+        ul {
+            @include grid-column(12);
+            list-style: none;
+            background-color: rgba(68, 0, 0, .1);
+            border-radius: 3px;
+            li {
+                @include grid-column(12);
+                list-style: none;
+                @include breakpoint(850px) {
+                    @include grid-column(4);
+                    padding: 5px;
+                }
+                ;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 19px;
+                }
+            }
         }
-      }
     }
-  }
 }

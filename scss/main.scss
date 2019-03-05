@@ -1,20 +1,16 @@
 // include foundation
-
 @import "../node_modules/foundation-sites/scss/foundation";
-
 @include foundation-global-styles;
 @include foundation-grid;
-
 @import "nav";
 @import "summary";
 @import "info";
 @import "social";
 @import "portfolio";
-
 body {
-  padding: 20px;
-  margin: 20px;
-  background-image: url('images/pastel.jpg');
-  background-size: cover;
-  font-family: 'Lato', sans-serif;
+    padding: 20px;
+    margin: 20px;
+    background-image: url('../images/pastel.jpg');
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
 }
